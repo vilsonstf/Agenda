@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'agenda';
+
+  valor = 0
+
+  nome = ""
+
+  nomes = [''];
+
+  contar(){
+    this.valor ++;
+  }
+
+  add(){
+    this.nomes.push(this.nome);
+    this.nome = '';
+  }
+
 }
